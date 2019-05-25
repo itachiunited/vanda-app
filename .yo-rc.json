@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "vandaApp",
+    "packageName": "com.vanda",
+    "packageFolder": "com/vanda",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.0.1",
+    "jwtSecretKey": "MjljODYzNmYwYmRhMTUxMDkwMTU0YTQ2ZTJmZmJhNTU2MGM2MDFhYzBhZjBjOWY0ZjgwYjk2YzJiNjA3ZTdlN2I2NjMzMzA4N2VlNzllNWQ3NGM0ZjFiNTgzNzRhOWE5MjE1OTU0NDlkY2JlOTYyOThjYWRmY2M1NmJkYjY2NGU=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "itachiunited",
+  "repository-name": "vanda-app"
+}

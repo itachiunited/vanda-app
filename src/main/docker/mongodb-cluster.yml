@@ -1,0 +1,16 @@
+version: '2'
+services:
+  vandaapp-mongodb:
+    image: mongo:4.0.9
+    ports:
+      - '27017:27017'
+    command: mongos --configdb vandaapp-mongodb-config
+  vandaapp-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --replSet rs1 --noprealloc --smallfiles
+  vandaapp-mongodb-config:
+    image: mongo:4.0.9
+    container_name: vandaapp-mongodb-config
+    command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db
